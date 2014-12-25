@@ -139,6 +139,7 @@ L.HeatMapWebGL = L.Class.extend({
             for (var i = 0; i < dataLen; i++) {
                 var it = this.data[i].properties,
                     val = 'sizeFunc' in options ? options.sizeFunc(it) : options.size,
+                    intensity = 'sizeIntensity' in options ? options.sizeIntensity(it) : options.intensity,
                     geo = it[it.length - 1],
                     coord = geo.coordinates;
 
@@ -146,7 +147,7 @@ L.HeatMapWebGL = L.Class.extend({
                     Math.floor(coord[0] * mInPixel + ctxShift[0]),
                     Math.floor(ctxShift[1] - coord[1] * mInPixel),
                     val,
-                    options.intensity
+                    intensity
                 );
             }
             heatmap.update();
