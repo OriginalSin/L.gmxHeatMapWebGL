@@ -5,4 +5,4 @@ gmxHeatMapWebGL - High performance Javascript heatmap plugin using WebGL for Geo
 
 ##Demos
 
-[View OSM and Rumap &rarr;](http://originalsin.github.io/L.gmxHeatMapWebGL/examples/gmxHeatMapWebGL.html)
+[View HeatMap &rarr;](http://originalsin.github.io/L.gmxHeatMapWebGL/examples/gmxHeatMapWebGL.html)
