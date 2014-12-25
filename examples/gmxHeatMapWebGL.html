@@ -102,7 +102,7 @@
                 var screenBounds = map.getBounds(),
                     p1 = screenBounds.getNorthWest(),
                     p2 = screenBounds.getSouthEast();
-                return bbox = new L.bounds([[p1.lat, p1.lng], [p2.lat, p2.lng]]);
+                return new L.bounds([[p1.lat, p1.lng], [p2.lat, p2.lng]]);
             };
             var observer = hotspotLayer.addObserver({
                 callback: function(data) {
